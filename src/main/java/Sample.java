@@ -10,7 +10,8 @@ public class Sample {
         return a == b;
     }
 
-    public boolean checkIdentity(){
+    public boolean checkIdentity()
+    {
         return a.equals(b);
     }
 
