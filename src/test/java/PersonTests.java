@@ -11,7 +11,7 @@ public class PersonTests {
         Person person1 = new Person();
         sample.person = person1;
 
-        Assert.assertSame(person1,sample.checking());
+        Assert.assertEquals(person1,sample.checking());
 
     }
 
@@ -19,7 +19,7 @@ public class PersonTests {
     public void shouldCheckObjectIdentity(){
         Sample sample = new Sample();
         Person person1 = new Person();
-        //sample.person = person1;
+        sample.person = person1;
 
         Assert.assertSame(person1,sample.checking());
 
