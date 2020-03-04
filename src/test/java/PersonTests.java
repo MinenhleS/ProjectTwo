@@ -7,10 +7,21 @@ public class PersonTests {
 
     @Test
     public void shouldCheckObject(){
+        Sample sample = new Sample();
         Person person1 = new Person();
+        sample.person = person1;
 
+        Assert.assertSame(person1,sample.checking());
 
-        Assert.assertEquals(person1,person1.checking());
+    }
+
+    @Test
+    public void shouldCheckObjectIdentity(){
+        Sample sample = new Sample();
+        Person person1 = new Person();
+        //sample.person = person1;
+
+        Assert.assertSame(person1,sample.checking());
 
     }
 

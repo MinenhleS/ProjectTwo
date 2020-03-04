@@ -5,6 +5,7 @@ public class Sample {
     String a = new String("This is my sentence");
     String b = new String("This is my sentence");
 
+    Person person = new Person("siya", "ngwenya", 20);
 
     public boolean checkEquality(){
         return a == b;
@@ -23,5 +24,8 @@ public class Sample {
         return i;
     }
 
+    public Object checking(){
+        return  person;
+    }
 
 }

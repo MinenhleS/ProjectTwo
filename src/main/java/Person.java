@@ -22,9 +22,7 @@ public class Person {
         return age;
     }
 
-    public Object checking(){
-        return  new Person("siya", "ngwenya", 20);
-    }
+
 
     @Override
     public String toString() {

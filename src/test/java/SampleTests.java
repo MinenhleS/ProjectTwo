@@ -10,7 +10,7 @@ public class SampleTests {
     @Test
     public void shouldCheckEquality(){
 
-        Assert.assertSame(false, sample.checkEquality());
+        Assert.assertEquals(false, sample.checkEquality());
 
     }
 
@@ -21,9 +21,9 @@ public class SampleTests {
     }
 
     @Test
-    public void shouldReturnCountOfLetters(){
+    public void shouldFail(){
 
-        Assert.assertEquals(7,sample.countLetters());
+        Assert.fail();
     }
 
 
